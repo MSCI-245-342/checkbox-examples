@@ -1,0 +1,58 @@
+<%= form_with(model: student, local: true) do |form| %>
+  <% if student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(student.errors.count, "error") %> prohibited this student from being saved:</h2>
+
+      <ul>
+        <% student.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :grade %>
+    <%= form.select :grade, [ 1,2,3,4,5,6,7,8,9,10,11,12 ] %>  
+  </div>
+
+  <div class="field">
+      <%= form.check_box :is_special %>
+      <%= form.label :is_special, style: "display: inline" %>
+
+  </div>
+
+  <div class="field">
+      <%= form.check_box :is_visa %>
+      <%= form.label :is_visa, style: "display: inline" %>
+
+  </div>
+
+  <div class="field">
+      <%= form.check_box :is_honors %>
+      <%= form.label :is_honors, style: "display: inline" %>
+
+  </div>
+
+  <div class="field">
+    <%= form.label :clubs, 'Clubs' %>
+    <%# form.collection_check_boxes :club_ids, Club.all, :id, :name %>
+<%= form.collection_check_boxes( :club_ids, Club.all, :id, :name) do |b| %>
+<%=   b.check_box style: "display: inline"%>
+<%=   b.label style: "display: inline" %>
+<%  end %>
+  </div>
+
+
+
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
