@@ -1,24 +1,5 @@
-# README
+# README - checkbox-examples
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+After cloning, do: `rails db:create db:migrate db:seed` 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Then, to run on codio do: `rails server -b 0.0.0.0`
