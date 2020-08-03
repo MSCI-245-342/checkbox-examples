@@ -1,5 +1,9 @@
 # README - checkbox-examples
 
-After cloning, do: `rails db:create db:migrate db:seed` 
+After cloning:
 
-Then, to run on codio do: `rails server -b 0.0.0.0`
+`bundle install`
+
+`rails db:create db:migrate db:seed` 
+
+`rails server -b 0.0.0.0`
