@@ -12,9 +12,7 @@ And then there are the manual pages, which are a bit confusing:
 
 1. https://api.rubyonrails.org/ and search for checkbox
 
-In addition, I've put together a small example of two ways checkboxes can appear / be done:
-
-https://github.com/MSCI-245-S20/checkbox-examples
+This repo contains examples of two ways to do checkboxes.
 
 You can clone the repo and do `bundle install` then setup the database then run the server to play around with the simple app.
 
@@ -28,7 +26,7 @@ After cloning:
 
 `rails server -b 0.0.0.0`
 
-This is my post about spellclasses:
+## Spellclasses
 
 There are probably four approaches to take for "spell classes":
 
