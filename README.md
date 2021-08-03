@@ -14,6 +14,8 @@ And then there are the manual pages, which are a bit confusing:
 
 This repo contains examples of two ways to do checkboxes.
 
+To get this running on Codio, you'll need to make yourself a new project with the **MSCI-245-S20 stack**.
+
 You can clone the repo and do `bundle install` then setup the database then run the server to play around with the simple app.
 
 I think the biggest thing to note is that if you use rails scaffolding and at the time of the scaffold creation, you identify that your model has boolean attributes, then the scaffold will produce a checkbox for each attribute for you.   So, if you are looking for a fairly easy way to do the spell classes, have a boolean attribute for each one in your spell class, then you get checkboxes automatically.
